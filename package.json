@@ -1,0 +1,19 @@
+{
+  "name": "a1id-poc",
+  "version": "1.0.0",
+  "description": "This is the A1 ID test repository",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/A1-Road/A1ID-PoC.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/A1-Road/A1ID-PoC/issues"
+  },
+  "homepage": "https://github.com/A1-Road/A1ID-PoC#readme"
+}
