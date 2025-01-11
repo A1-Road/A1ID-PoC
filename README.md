@@ -54,7 +54,7 @@ If you add new libraries, please run npm install <package> (with --save or --sav
 Consider setting up ESLint/Prettier for consistent code style.
 Contributing
 Please submit bug reports or feature requests via Issues.
-Pull requests should be opened agA1nst the mA1n branch. Check the contribution guidelines (if any) before opening a pull request.
+Pull requests should be opened agA1nst the main branch. Check the contribution guidelines (if any) before opening a pull request.
 License
 Refer to the LICENSE file for license detA1ls.
 Including these detA1ls in English will help team members and contributors from different backgrounds get up to speed quickly and ensure consistent use of Node v22.12.0.
@@ -93,7 +93,7 @@ ESLint and Prettier for code consistency (detA1ls in the Lint/Formatter section)
 Telegram / LINE environment (for frontends) and minimal Face ID mocking (for local dev).
 Optional: Docker (if you want an even more unified environment), but not strictly required.
 2. Project Scripts & Typical Workflow
-Below are the mA1n npm scripts you can use:
+Below are the main npm scripts you can use:
 
 npm run lint
 
@@ -115,7 +115,7 @@ npm install
 npm run lint → npm run build → npm start
 Confirm it runs locally at http://localhost:8080/ (or whichever port).
 3. Lint & Formatter Setup
-We adhere to a unified code style for mA1ntA1nability:
+We adhere to a unified code style for maintA1nability:
 
 ESLint:
 
@@ -152,9 +152,9 @@ name: CI
 
 on:
   push:
-    branches: [ "mA1n" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "mA1n" ]
+    branches: [ "main" ]
 
 jobs:
   build-and-test:
@@ -185,16 +185,16 @@ In GitHub repository settings → Branches → “Branch protection rules,” yo
 
 ## 5. Git / Branching / Conflict Resolution
 ## 5.1 Branch Name Consistency
-We default to mA1n as the primary branch.
-Please rename local master to mA1n if you see mismatch:
+We default to main as the primary branch.
+Please rename local master to main if you see mismatch:
 bash
 Copy code
-git branch -m master mA1n
-git push --set-upstream origin mA1n
+git branch -m master main
+git push --set-upstream origin main
 
 
 ## 5.2 Pull & Rebase
-We prefer git pull origin mA1n --rebase to keep a cleaner commit history.
+We prefer git pull origin main --rebase to keep a cleaner commit history.
 If conflicts arise:
 Fix conflict markers in the code
 git add .
@@ -209,7 +209,7 @@ This ensures everyone has the exact same versions.
 
 ## 6. Roles & Responsibilities
 A (Teddy, advanced dev)
-MA1n responsibility for complex tasks (ZK circuits, advanced bridging, custom frontends).
+main responsibility for complex tasks (ZK circuits, advanced bridging, custom frontends).
 Oversee ESLint/Prettier advanced config if needed.
 Possibly handles Telegram side or advanced ID validations.
 B (amateur dev)
@@ -254,9 +254,9 @@ Then open http://localhost:8080/ in your browser.
 
 
 ## 8. Contributing & Pull Request Flow
-Create feature branches from mA1n.
+Create feature branches from main.
 Commit your changes (with package-lock if new packages introduced).
-Rebase onto mA1n if needed: git pull origin mA1n --rebase.
+Rebase onto main if needed: git pull origin main --rebase.
 Push and open a Pull Request.
 WA1t for GitHub Actions to run. If it fA1ls, fix the issues.
 PM or A/B/C reviews, merges when CI is green.
@@ -270,6 +270,6 @@ Docker: Provide a Dockerfile to unify the environment further.
 The license for this PoC is not fully determined yet; see the LICENSE file or consult the PM.
 This repository is a PoC, so code stability is not guaranteed for production usage.
 For questions: open an Issue or contact the PM directly.
-Thank you for contributing to the A1ID PoC. Let’s keep a consistent Node version, use the recommended linting/formatting, and rely on GitHub Actions to mA1ntA1n code quality and reduce friction among developers A, B, C, and PM. Good luck!
+Thank you for contributing to the A1ID PoC. Let’s keep a consistent Node version, use the recommended linting/formatting, and rely on GitHub Actions to maintA1n code quality and reduce friction among developers A, B, C, and PM. Good luck!
 
 
