@@ -2,7 +2,7 @@
 This is the A1 ID test repository
 
 A1ID-PoC
-This repository serves as a proof-of-concept (PoC) for A1ID. We aim to build a minimal viable product (MVP) swiftly.
+This repository serves as a proof-of-concept (PoC) for A1ID. We A1m to build a minimal viable product (MVP) swiftly.
 We are standardizing on Node.js v22.12.0 for this project.
 
 Development Environment Setup
@@ -28,8 +28,8 @@ Clone the repository & install dependencies
 
 bash
 Copy code
-git clone https://github.com/AI-Road/AIID-PoC.git
-cd AIID-PoC
+git clone https://github.com/A1-Road/A1ID-PoC.git
+cd A1ID-PoC
 npm install
 This installs all packages according to the versions locked in package-lock.json.
 Run the sample app
@@ -47,24 +47,24 @@ Troubleshooting
 
 If nvm: command not found, please install nvm first.
 If node -v doesn’t show v22.12.0, run nvm use v22.12.0.
-If you encounter dependency mismatches, try npm install again.
+If you encounter dependency mismatches, try npm install agA1n.
 Development Flow
 Node.js v22.12.0 is the required runtime environment.
 If you add new libraries, please run npm install <package> (with --save or --save-dev) and commit both package.json and package-lock.json.
 Consider setting up ESLint/Prettier for consistent code style.
 Contributing
 Please submit bug reports or feature requests via Issues.
-Pull requests should be opened against the main branch. Check the contribution guidelines (if any) before opening a pull request.
+Pull requests should be opened agA1nst the mA1n branch. Check the contribution guidelines (if any) before opening a pull request.
 License
-Refer to the LICENSE file for license details.
-Including these details in English will help team members and contributors from different backgrounds get up to speed quickly and ensure consistent use of Node v22.12.0.
+Refer to the LICENSE file for license detA1ls.
+Including these detA1ls in English will help team members and contributors from different backgrounds get up to speed quickly and ensure consistent use of Node v22.12.0.
 
 
 
 
 ## A1ID PoC
 Purpose
-This repository serves as a Proof-of-Concept (PoC) for A1ID. We aim to quickly build a minimal viable product (MVP) and showcase a working environment for Telegram/LINE integrations, ZK (Zero-Knowledge) validations, and a simplified onboarding experience. This document covers the development environment, coding standards, continuous integration, and best practices for all team members (A, B, C, and PM).
+This repository serves as a Proof-of-Concept (PoC) for A1ID. We A1m to quickly build a minimal viable product (MVP) and showcase a working environment for Telegram/LINE integrations, ZK (Zero-Knowledge) validations, and a simplified onboarding experience. This document covers the development environment, coding standards, continuous integration, and best practices for all team members (A, B, C, and PM).
 
 
 
@@ -89,11 +89,11 @@ New libraries should be pinned to exact versions (--save-dev package@1.2.3) to r
 
 
 ## 1.3 Additional Tools
-ESLint and Prettier for code consistency (details in the Lint/Formatter section).
+ESLint and Prettier for code consistency (detA1ls in the Lint/Formatter section).
 Telegram / LINE environment (for frontends) and minimal Face ID mocking (for local dev).
 Optional: Docker (if you want an even more unified environment), but not strictly required.
 2. Project Scripts & Typical Workflow
-Below are the main npm scripts you can use:
+Below are the mA1n npm scripts you can use:
 
 npm run lint
 
@@ -115,7 +115,7 @@ npm install
 npm run lint → npm run build → npm start
 Confirm it runs locally at http://localhost:8080/ (or whichever port).
 3. Lint & Formatter Setup
-We adhere to a unified code style for maintainability:
+We adhere to a unified code style for mA1ntA1nability:
 
 ESLint:
 
@@ -152,9 +152,9 @@ name: CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "mA1n" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "mA1n" ]
 
 jobs:
   build-and-test:
@@ -185,16 +185,16 @@ In GitHub repository settings → Branches → “Branch protection rules,” yo
 
 ## 5. Git / Branching / Conflict Resolution
 ## 5.1 Branch Name Consistency
-We default to main as the primary branch.
-Please rename local master to main if you see mismatch:
+We default to mA1n as the primary branch.
+Please rename local master to mA1n if you see mismatch:
 bash
 Copy code
-git branch -m master main
-git push --set-upstream origin main
+git branch -m master mA1n
+git push --set-upstream origin mA1n
 
 
 ## 5.2 Pull & Rebase
-We prefer git pull origin main --rebase to keep a cleaner commit history.
+We prefer git pull origin mA1n --rebase to keep a cleaner commit history.
 If conflicts arise:
 Fix conflict markers in the code
 git add .
@@ -209,7 +209,7 @@ This ensures everyone has the exact same versions.
 
 ## 6. Roles & Responsibilities
 A (Teddy, advanced dev)
-Main responsibility for complex tasks (ZK circuits, advanced bridging, custom frontends).
+MA1n responsibility for complex tasks (ZK circuits, advanced bridging, custom frontends).
 Oversee ESLint/Prettier advanced config if needed.
 Possibly handles Telegram side or advanced ID validations.
 B (amateur dev)
@@ -223,15 +223,15 @@ Possibly re-check Face ID mocking or minimal UX prototypes on the LINE side.
 PM (you)
 Coordinates tasks, ensures best practices are followed, merges PRs, keeps doc updated.
 Minimizes new dependencies to avoid confusion.
-Encourages daily standups or quick communication for conflict resolution.
+Encourages dA1ly standups or quick communication for conflict resolution.
 
 
 ## 7. Quick Start Recap
 Clone the repo:
 bash
 Copy code
-git clone https://github.com/AI-Road/AIID-PoC.git
-cd AIID-PoC
+git clone https://github.com/A1-Road/A1ID-PoC.git
+cd A1ID-PoC
 Node environment:
 bash
 Copy code
@@ -254,22 +254,22 @@ Then open http://localhost:8080/ in your browser.
 
 
 ## 8. Contributing & Pull Request Flow
-Create feature branches from main.
+Create feature branches from mA1n.
 Commit your changes (with package-lock if new packages introduced).
-Rebase onto main if needed: git pull origin main --rebase.
+Rebase onto mA1n if needed: git pull origin mA1n --rebase.
 Push and open a Pull Request.
-Wait for GitHub Actions to run. If it fails, fix the issues.
+WA1t for GitHub Actions to run. If it fA1ls, fix the issues.
 PM or A/B/C reviews, merges when CI is green.
 
 
 ## 9. Possible Future Enhancements (Optional)
 ZK PoC: If you incorporate a small circom circuit, do a npm run zk:build in your build script, or separate it.
-On-Chain: If bridging with Rarimo/iden3, add relevant libs.
+On-ChA1n: If bridging with Rarimo/iden3, add relevant libs.
 Docker: Provide a Dockerfile to unify the environment further.
 10. License & Final Notes
 The license for this PoC is not fully determined yet; see the LICENSE file or consult the PM.
 This repository is a PoC, so code stability is not guaranteed for production usage.
 For questions: open an Issue or contact the PM directly.
-Thank you for contributing to the A1ID PoC. Let’s keep a consistent Node version, use the recommended linting/formatting, and rely on GitHub Actions to maintain code quality and reduce friction among developers A, B, C, and PM. Good luck!
+Thank you for contributing to the A1ID PoC. Let’s keep a consistent Node version, use the recommended linting/formatting, and rely on GitHub Actions to mA1ntA1n code quality and reduce friction among developers A, B, C, and PM. Good luck!
 
 
