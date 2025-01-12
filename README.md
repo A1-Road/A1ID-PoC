@@ -8,6 +8,10 @@ We are standardizing on Node.js v22.12.0 for this project.
 Development Environment Setup
 Install Node.js (v22.12.0) via nvm
 
+We unify the entire codebase in TypeScript (Node v22.12.0).
+Please ensure you run `npm install` then `npm run build`.
+
+
 We recommend using nvm (Node Version Manager) to manage Node versions.
 After installing nvm, run the following commands from the project root:
 bash
