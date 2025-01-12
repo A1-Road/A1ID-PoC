@@ -115,7 +115,7 @@ npm install
 npm run lint → npm run build → npm start
 Confirm it runs locally at http://localhost:8080/ (or whichever port).
 3. Lint & Formatter Setup
-We adhere to a unified code style for maintA1nability:
+We adhere to a unified code style for maintainability:
 
 ESLint:
 
@@ -208,22 +208,28 @@ This ensures everyone has the exact same versions.
 
 
 ## 6. Roles & Responsibilities
-A (Teddy, advanced dev)
+Teddy (advanced dev)
+
 main responsibility for complex tasks (ZK circuits, advanced bridging, custom frontends).
 Oversee ESLint/Prettier advanced config if needed.
 Possibly handles Telegram side or advanced ID validations.
-B (amateur dev)
+
+shunshun (amateur dev)
+
 Basic tasks: add routes, minor back-end logic, doc updates.
 Follows the “npm install → commit lockfile → push → pull --rebase**” flow carefully.
 Ensure code passes npm run lint before push.
-C (LINE frontend dev)
+
+lycp (LINE frontend dev)
+
 Focus on LIFF integration.
 Use the same Node version (nvm use v22.12.0), run npm install, etc.
 Possibly re-check Face ID mocking or minimal UX prototypes on the LINE side.
-PM (you)
+
+PM (Kaz)
 Coordinates tasks, ensures best practices are followed, merges PRs, keeps doc updated.
 Minimizes new dependencies to avoid confusion.
-Encourages dA1ly standups or quick communication for conflict resolution.
+Encourages daily standups or quick communication for conflict resolution.
 
 
 ## 7. Quick Start Recap
@@ -258,13 +264,13 @@ Create feature branches from main.
 Commit your changes (with package-lock if new packages introduced).
 Rebase onto main if needed: git pull origin main --rebase.
 Push and open a Pull Request.
-WA1t for GitHub Actions to run. If it fA1ls, fix the issues.
+Wait for GitHub Actions to run. If it fails, fix the issues.
 PM or A/B/C reviews, merges when CI is green.
 
 
 ## 9. Possible Future Enhancements (Optional)
 ZK PoC: If you incorporate a small circom circuit, do a npm run zk:build in your build script, or separate it.
-On-ChA1n: If bridging with Rarimo/iden3, add relevant libs.
+On-Chain: If bridging with Rarimo/iden3, add relevant libs.
 Docker: Provide a Dockerfile to unify the environment further.
 10. License & Final Notes
 The license for this PoC is not fully determined yet; see the LICENSE file or consult the PM.
