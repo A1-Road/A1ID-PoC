@@ -69,7 +69,7 @@ This repository serves as a Proof-of-Concept (PoC) for A1ID. We A1m to quickly b
 
 
 ## 1. Development Environment
-
+'''
 A1ID-Project/
  ├─ README.md                  // 本ドキュメント
  ├─ .env.example               // 環境変数サンプル
@@ -98,7 +98,7 @@ A1ID-Project/
      └─ scripts/
          └─ compileAndTest.sh
 
-
+'''
 
 
 1.1 Required Node.js Version
