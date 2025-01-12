@@ -270,6 +270,6 @@ Docker: Provide a Dockerfile to unify the environment further.
 The license for this PoC is not fully determined yet; see the LICENSE file or consult the PM.
 This repository is a PoC, so code stability is not guaranteed for production usage.
 For questions: open an Issue or contact the PM directly.
-Thank you for contributing to the A1ID PoC. Let’s keep a consistent Node version, use the recommended linting/formatting, and rely on GitHub Actions to maintA1n code quality and reduce friction among developers A, B, C, and PM. Good luck!
+Thank you for contributing to the A1ID PoC. Let’s keep a consistent Node version, use the recommended linting/formatting, and rely on GitHub Actions to maintain code quality and reduce friction among developers A, B, C, and PM. Good luck!
 
 
