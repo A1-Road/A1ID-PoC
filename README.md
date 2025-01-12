@@ -70,6 +70,37 @@ This repository serves as a Proof-of-Concept (PoC) for A1ID. We A1m to quickly b
 
 ## 1. Development Environment
 
+A1ID-Project/
+ ├─ README.md                  // 本ドキュメント
+ ├─ .env.example               // 環境変数サンプル
+ ├─ docs/                      // ドキュメント類
+ ├─ backend/
+ │   ├─ package.json
+ │   ├─ src/
+ │   │   ├─ index.ts           // メインエントリ
+ │   │   ├─ config/            // 環境設定やDB接続
+ │   │   ├─ controllers/       // APIコントローラー
+ │   │   ├─ services/          // 業務ロジック、ZK処理
+ │   │   └─ models/            // DBモデル
+ │   └─ test/                  // テストコード
+ ├─ frontend/
+ │   ├─ line/                  // LIFFアプリ用フロント
+ │   │   ├─ index.html
+ │   │   ├─ liffMain.ts        // LIFF init & UI
+ │   │   └─ ...
+ │   └─ telegram/              // Telegram WebApp用フロント
+ │       ├─ index.html
+ │       ├─ tgMain.js
+ │       └─ ...
+ └─ zk-poc/                    // 簡易ZK回路など (circom, wasm)
+     ├─ circuits/ 
+     │   └─ example.circom
+     └─ scripts/
+         └─ compileAndTest.sh
+
+
+
+
 1.1 Required Node.js Version
 Node.js: v22.12.0
 We unify on Node v22.12.0 to avoid version mismatch.
